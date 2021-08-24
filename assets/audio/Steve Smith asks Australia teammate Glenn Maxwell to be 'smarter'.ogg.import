@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Steve Smith asks Australia teammate Glenn Maxwell to be 'smarter'.ogg-cd005f5700e52b63b940618f9337e7f5.oggstr"
+
+[deps]
+
+source_file="res://assets/audio/Steve Smith asks Australia teammate Glenn Maxwell to be 'smarter'.ogg"
+dest_files=[ "res://.import/Steve Smith asks Australia teammate Glenn Maxwell to be 'smarter'.ogg-cd005f5700e52b63b940618f9337e7f5.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
