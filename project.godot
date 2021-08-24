@@ -13,9 +13,8 @@ config_version=4
 config/name="MaxiToTheMoon"
 run/main_scene="res://objects/Main.tscn"
 boot_splash/image="res://assets/images/maxi-custom-flare.png"
-boot_splash/use_filter=false
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
-config/icon="res://icon.png"
+config/icon="res://moon.png"
 
 [autoload]
 
@@ -33,6 +32,8 @@ window/size/height=854
 window/handheld/orientation="portrait"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
+window/fullsize=true
+window/image="res://assets/images/maxi-custom-flare.png"
 
 [editor]
 
@@ -55,5 +56,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+batching/debug/diagnose_frame=true
 environment/default_clear_color=Color( 0, 0, 0, 1 )
+quality/depth/hdr.mobile=true
 environment/default_environment="res://default_env.tres"

@@ -16,31 +16,31 @@ func _ready():
 	$HUD.hide()
 
 func increase_runs(value):
-	print("increasing runs by " + str(value) + ", level: " + str(level))
+	#print("increasing runs by " + str(value) + ", level: " + str(level))
 	
 	if value > 0:
 		runs += value
 		if int(runs)/Settings.circles_per_level > level - 1:
-			print(str(int(runs)/Settings.circles_per_level) + " runs / 5")
+			#print(str(int(runs)/Settings.circles_per_level) + " runs / 5")
 			
-			if level*Settings.circles_per_level - runs > Settings.circles_per_level:
+			if int(runs)/Settings.circles_per_level > level:
 				level +=1
-				print("Six when on 1 less than a multiple of circles per level")
+				#print("Six when on 1 less than a multiple of circles per level")
 			level += 1
 			$HUD.show_message("Level up")
-
+	#print ("new level: " + str(level))
 func randomise():
 	pass
 	
 func new_game():
-	level = 0
+	level = 1
 	runs = 0
 	wickets = 0
 	ballsFaced = -1
 	
 	if Settings.enable_music:
 		$BackgroundMusic.play()
-	level = 1
+
 	$Camera2D.position = $StartPosition.position
 	player = Jumper.instance()
 	player.position = $StartPosition.position

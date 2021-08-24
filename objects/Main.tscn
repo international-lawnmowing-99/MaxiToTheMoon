@@ -8,12 +8,13 @@
 
 [sub_resource type="Environment" id=1]
 background_mode = 4
+tonemap_mode = 3
 dof_blur_near_distance = 8192.0
 glow_enabled = true
 glow_levels/3 = false
 glow_levels/6 = true
 glow_intensity = 4.49
-glow_strength = 0.82
+glow_strength = 0.75
 glow_bloom = 0.5
 glow_blend_mode = 1
 glow_bicubic_upscale = true

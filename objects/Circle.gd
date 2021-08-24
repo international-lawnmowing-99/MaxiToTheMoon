@@ -53,7 +53,7 @@ func init(_position, level = 1, current_position = Vector2(0,0)):
 		
 		if run_value == 6 and rand_range(0,1) < .5:
 			run_value = 2
-		
+
 		if run_value>1:
 			scale = Vector2( 2/float(run_value), 2/float(run_value))
 			$Pivot.scale = Vector2(float(run_value)/2,float(run_value)/2)
