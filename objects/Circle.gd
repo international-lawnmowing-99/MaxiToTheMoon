@@ -58,12 +58,12 @@ func init(_position, level = 1, current_position = Vector2(0,0)):
 			scale = Vector2( 2/float(run_value), 2/float(run_value))
 			$Pivot.scale = Vector2(float(run_value)/2,float(run_value)/2)
 		
-	var _mode = Settings.rand_weighted([inflection_level, level -1])
+	var _mode = Settings.rand_weighted([inflection_level/2, level -1])
 	var move_chance = clamp(level - inflection_level, 0, inflection_level-1)/inflection_level
 	if randf() < move_chance:
 		move_range = max(25, 100 * rand_range(0.75, 1.25) * move_chance) * pow(-1, randi() % 2)
 		move_speed = max(2.5 - ceil(level/5) * 0.25, 0.75)
-	rotation_speed = float(level+4)/ plateau_level * 4*PI;
+	rotation_speed = float(level+6)/ plateau_level * 3*PI;
 
 	set_mode(_mode)
 	position = _position
